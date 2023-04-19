@@ -4,6 +4,8 @@ import brand from "@adaptavant/brands/dist/brands/setmore";
 import styleEngine from "@adaptavant/emotion";
 import translations from "@adaptavant/translations/dist/translations/english";
 
+import "~/styles/global.css";
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Root
