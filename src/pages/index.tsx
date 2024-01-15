@@ -12,45 +12,24 @@ export default function Home() {
   return (
     <Stack
       as="main"
-      alignX="center"
-      sx={{
-        root: {
-          "background-color": "surfaceSecondary",
-          "justify-content": "center",
-        },
-      }}
-      styles={{
-        root: {
-          minHeight: "100vh",
-        },
-      }}
+      className="
+        bg-accent-secondary
+        items-center
+        justify-center
+        min-h-screen
+      "
     >
       <Stack
         as="form"
-        alignX="stretch"
-        gap="32"
-        sx={{
-          root: {
-            "background-color": "scene",
-            "padding-inline": "48",
-            "padding-block": "32",
-            "border-radius": "medium",
-            width: "full",
-          },
-        }}
-        styles={{
-          root: {
-            maxWidth: 400,
-          },
-        }}
+        className="max-w-[400px] bg-neutral px-12 py-8 rounded-6px w-full gap-8 items-stretch"
       >
-        <Stack gap="8" alignX="center">
+        <Stack className="gap-2 items-center">
           <Heading as="h1" typography="heading.3">
             Welcome back
           </Heading>
           <Text tone="secondary">Enter your account details</Text>
         </Stack>
-        <Stack gap="16" alignX="stretch">
+        <Stack className="items-stretch gap-4">
           <Field label="Email">
             <TextInput type="email" />
           </Field>
@@ -58,7 +37,7 @@ export default function Home() {
             <TextInput type="password" />
           </Field>
         </Stack>
-        <Stack gap="12" alignX="stretch">
+        <Stack className="gap-3 items-stretch">
           <Button size="large" type="submit">
             Sign in
           </Button>
